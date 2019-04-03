@@ -9,6 +9,7 @@ namespace BigSchool.ViewModels
 {
     public class CourseViewModel
     {
+        /*
         [Required]
         public string Place { get; set; }
         [Required]
@@ -23,6 +24,9 @@ namespace BigSchool.ViewModels
         public DateTime GetDateTime()
         {
             return DateTime.Parse(string.Format("{0} {1}", Date, Time));
-        }
+        }*/
+
+        public IEnumerable<Course> UpcommingCourses { get; set; }
+        public bool ShowAction { get; set; }
     }
 }
